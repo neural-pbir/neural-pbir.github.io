@@ -6,8 +6,8 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:title" content="Neural-PBIR" />
+  <meta property="og:description" content="Reconstruction of Shape, Material, and Illumination." />
   <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -15,13 +15,13 @@
   <meta property="og:image:height" content="630" />
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Neural-PBIR">
+  <meta name="twitter:description" content="Reconstruction of Shape, Material, and Illumination.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Neural-PBIR, physics-based, inverse rendering, 3D reconstruction, material estimation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -34,9 +34,13 @@
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
@@ -194,33 +198,29 @@
 
 
   <!-- Image carousel -->
-  <section class="hero is-small">
+  <!-- <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
-            <!-- Your image here -->
             <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
               First image description.
             </h2>
           </div>
           <div class="item">
-            <!-- Your image here -->
             <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
               Second image description.
             </h2>
           </div>
           <div class="item">
-            <!-- Your image here -->
             <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
               Third image description.
             </h2>
           </div>
           <div class="item">
-            <!-- Your image here -->
             <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
               Fourth image description.
@@ -229,23 +229,21 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End image carousel -->
 
 
 
 
   <!-- Youtube video -->
-  <section class="hero is-small is-light">
+  <!-- <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
-        <!-- Paper video. -->
         <h2 class="title is-3">Video Presentation</h2>
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
 
             <div class="publication-video">
-              <!-- Youtube embed code here -->
               <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
             </div>
@@ -253,43 +251,219 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End youtube video -->
 
 
-  <!-- Video carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
+  <!-- Interactive demo -->
+  <section class="section">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Novel views and illuminations rendering</h2>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-6 has-text-centered">
+            <div class="interactive-options">
+            <h3>Object</h3>
+            <div id="option-object" class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons">
+              <label type="button" class="btn btn-secondary active">
+                <input type="radio" autocomplete="off" value="pumpkin"> Pumpkin
+                <img src="./static/images/pumpkin.jpg">
+              </label>
+              <label type="button" class="btn btn-secondary">
+                <input type="radio" autocomplete="off" value="dinosaur"> Dinosaur
+                <img src="./static/images/dinosaur.jpg">
+              </label>
+              <label type="button" class="btn btn-secondary">
+                <input type="radio" autocomplete="off" value="green_plant"> Green plant
+                <img src="./static/images/green_plant.jpg">
+              </label>
+              <label type="button" class="btn btn-secondary">
+                <input type="radio" autocomplete="off" value="plantpot"> Plantpot
+                <img src="./static/images/plantpot.jpg">
+              </label>
+              <label type="button" class="btn btn-secondary">
+                <input type="radio" autocomplete="off" value="shose"> Shose
+                <img src="./static/images/shose.jpg">
+              </label>
+            </div>
+            </div>
+
+            <div class="interactive-options">
+            <h3>Novel Lighting</h3>
+            <div id="option-lighting" class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons">
+              <label type="button" class="btn btn-secondary active">
+                <input type="radio" autocomplete="off" value="city"> City
+                <img src="./static/images/city.jpg">
+              </label>
+              <label type="button" class="btn btn-secondary">
+                <input type="radio" autocomplete="off" value="courtyard"> Courtyard
+                <img src="./static/images/courtyard.jpg">
+              </label>
+              <label type="button" class="btn btn-secondary">
+                <input type="radio" autocomplete="off" value="interior"> Interior
+                <img src="./static/images/interior.jpg">
+              </label>
+            </div>
+            </div>
+
+            <div class="interactive-options">
+              <h3>Rotation</h3>
+              <div id="option-rotate" class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons">
+                <label type="button" class="btn btn-secondary active">
+                  <input type="radio" autocomplete="off" value="r_lgt"> Lighting
+                </label>
+                <label type="button" class="btn btn-secondary">
+                  <input type="radio" autocomplete="off" value="r_cam"> Camera
+                </label>
+              </div>
+              <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+            </div>
+
+          </div>
+          <div id="interactive-container">
+          <div class="column interpolation-video-column">
+            <video id="interactive-video" preload muted playsinline width="100%">
+              <source src="./static/videos/pumpkin_city_r_lgt_ours.mp4"
+                      type="video/mp4">
             </video>
           </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\
-              <!-- Your video file here -->
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- End interactive demo -->
+
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Comparison</h2>
+      <div class="container">
+        <div id="results-ours" class="carousel results-carousel">
+          <div class="item item-comp_pumpkin_courtyard">
+            <video poster="" id="comp_pumpkin_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_pumpkin_courtyard.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_dinosaur_interior">
+            <video poster="" id="comp_dinosaur_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_dinosaur_interior.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_green_plant_city">
+            <video poster="" id="comp_green_plant_city" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_green_plant_city.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_plantpot_interior">
+            <video poster="" id="comp_plantpot_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_plantpot_interior.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_shose_courtyard">
+            <video poster="" id="comp_shose_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_shose_courtyard.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <!-- city lgt -->
+          <!-- <div class="item item-comp_pumpkin_city">
+            <video poster="" id="comp_pumpkin_city" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_pumpkin_city.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_dinosaur_city">
+            <video poster="" id="comp_dinosaur_city" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_dinosaur_city.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_green_plant_city">
+            <video poster="" id="comp_green_plant_city" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_green_plant_city.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_plantpot_city">
+            <video poster="" id="comp_plantpot_city" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_plantpot_city.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_shose_city">
+            <video poster="" id="comp_shose_city" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_shose_city.mp4"
+                      type="video/mp4">
+            </video>
+          </div> -->
+          <!-- courtyard lgt -->
+          <!-- <div class="item item-comp_pumpkin_courtyard">
+            <video poster="" id="comp_pumpkin_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_pumpkin_courtyard.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_dinosaur_courtyard">
+            <video poster="" id="comp_dinosaur_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_dinosaur_courtyard.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_green_plant_courtyard">
+            <video poster="" id="comp_green_plant_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_green_plant_courtyard.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_plantpot_courtyard">
+            <video poster="" id="comp_plantpot_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_plantpot_courtyard.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_shose_courtyard">
+            <video poster="" id="comp_shose_courtyard" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_shose_courtyard.mp4"
+                      type="video/mp4">
+            </video>
+          </div> -->
+          <!-- interior lgt -->
+          <!-- <div class="item item-comp_pumpkin_interior">
+            <video poster="" id="comp_pumpkin_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_pumpkin_interior.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_dinosaur_interior">
+            <video poster="" id="comp_dinosaur_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_dinosaur_interior.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_green_plant_interior">
+            <video poster="" id="comp_green_plant_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_green_plant_interior.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_plantpot_interior">
+            <video poster="" id="comp_plantpot_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_plantpot_interior.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-comp_shose_interior">
+            <video poster="" id="comp_shose_interior" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/comp_shose_interior.mp4"
+                      type="video/mp4">
+            </video>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- End video carousel -->
-
-
-
-
 
 
   <!-- Paper poster -->
@@ -311,7 +485,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{sun2023neuralpbir,
+  author    = {Cheng Sun, Guangyan Cai, Zhengqin Li, Kai Yan, Cheng Zhang, Carl Marshall, Jia-Bin Huang, Shuang Zhao, Zhao Dong},
+  title     = {Neural-PBIR Reconstruction of Shape, Material, and Illumination},
+  journal   = {arxiv},
+  year      = {2023},
+}</code></pre>
     </div>
   </section>
   <!--End BibTex citation -->

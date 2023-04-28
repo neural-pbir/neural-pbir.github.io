@@ -134,4 +134,36 @@ body {
 }
 
 
+.interpolation-panel {
+  border-radius: 10px;
+}
 
+.interpolation-panel .interpolation-image {
+  width: 100%;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+}
+
+.interactive-options {
+  margin-bottom: 2em;
+}
+
+.interactive-options img {
+  width: 100%;
+  display: block;
+}
